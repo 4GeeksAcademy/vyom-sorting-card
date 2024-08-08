@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Card and Sortings</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,18 +12,53 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-success p-4">
+    <div class="">
+      <div class="d-flex text-white gap-1">
+        <h3 class="m-0 fw-bold">Original</h3>
+        <input
+          class="rounded "
+          type="number"
+          placeholder="Set Numbers Cards..."
+          style="outline: none;"
+        />
+        <button id="btn-draw" type="button" class="btn btn-danger fw-bold">
+          Draw
+        </button>
+        <button id="btn-sort" type="button" class="btn btn-danger fw-bold">
+          Sort
+        </button>
       </div>
+      <!-- lista de cartas originales -->
+      <div
+        class="d-flex gap-2 cards-original text-black mt-2 flex-wrap"
+        id="list-cards-original"
+      >
+        <!-- aqui va cada carta generada -->
+        <!-- <div -->
+        <!--   class="d-flex flex-column gap-4 bg-white rounded fs-5 p-2 fw-bold" -->
+        <!--   style="width: 110px; height: 150px;" -->
+        <!--   id="id-Card" -->
+        <!-- > -->
+        <!--   <div class=""> -->
+        <!--     S -->
+        <!--   </div> -->
+        <!--   <div class="mx-auto">Num</div> -->
+        <!--   <div -->
+        <!--     class="d-flex justify-content-start align-items-start" -->
+        <!--     style="height: 100%; transform: rotate(180deg);" -->
+        <!--   > -->
+        <!--     S -->
+        <!--   </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="text-white mt-4">
+      <h3 class="fw-bold">Bubble log</h3>
+      <div
+        class=" gap-2 cards-original text-black mt-2 flex-wrap"
+        id="bubble-list"
+      ></div>
     </div>
   </body>
 </html>
